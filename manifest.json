@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "version": "0.1.0",
+    "name": "Anole",
+    "permissions": [
+        "contextMenus"
+     ],
+    "icons": {
+              "16": "anole-icon-bitty.png"
+            }, 
+    "background": {
+     "scripts": ["anole.js"]
+    }           
+}
