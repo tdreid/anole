@@ -1,6 +1,6 @@
 /* global chrome */
 
-function copyToKebobCase(info, tab) {
+function copyToKebabCase(info, tab) {
   console.log(
     info.selectionText
       .replace(/[^a-zA-Z0-9 -]/g, '')
@@ -10,7 +10,7 @@ function copyToKebobCase(info, tab) {
 }
 
 chrome.contextMenus.create({
-  title: 'copy-to-kebob-case',
+  title: 'copy-to-kebab-case',
   contexts: ['selection'],
-  onclick: copyToKebobCase
+  onclick: copyToKebabCase
 });
