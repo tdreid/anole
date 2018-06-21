@@ -1,7 +1,12 @@
 /* global chrome */
 
 function copyToKebobCase(info, tab) {
-  // TO DO: implement string conversion
+  console.log(
+    info.selectionText
+      .replace(/[^a-zA-Z0-9 -]/g, '')
+      .replace(/\s+/g, '-')
+      .toLowerCase()
+  );
 }
 
 chrome.contextMenus.create({
