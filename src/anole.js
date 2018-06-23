@@ -1,12 +1,9 @@
 /* global chrome */
 
+const kebabCase = require('lodash/kebabCase');
+
 function copyToKebabCase(info, tab) {
-  console.log(
-    info.selectionText
-      .replace(/[^a-zA-Z0-9 -]/g, '')
-      .replace(/\s+/g, '-')
-      .toLowerCase()
-  );
+  console.log(kebabCase(info.selectionText));
 }
 
 chrome.contextMenus.create({
