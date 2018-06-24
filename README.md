@@ -33,3 +33,22 @@ A chrome extension for transforming selected text
    Anole context menu that offers the sub-menu actions as picture above.
 
 ## Installation — Chrome Web Store [**COMING SOON**]
+
+## License
+**GNU General Public License 3.0 Only** 
+
+**GPL-3.0-only**
+
+Copyright (C) 2018 [Trevor D. Reid](https://tdreid.github.io/)
+
+This program is free software: you can redistribute it and/or modify it under 
+the terms of the GNU General Public License as published by the Free Software 
+Foundation, version 3 only.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY 
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
+PARTICULAR PURPOSE. See [the GNU General Public License](LICENSE) for more 
+details.
+
+You should have received [a copy of the GNU General Public License](LICENSE) 
+along with this program. If not, see <https://www.gnu.org/licenses/>.
