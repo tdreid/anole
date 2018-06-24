@@ -2,7 +2,7 @@
 A chrome extension for transforming selected text
 ![](doc/img/anole-in-action.png)
 
-## Supported transofrmations...
+## Supported transformations...
 - copyToCamelCase
 - copy-to-kebab-case
 - copy to lower case
@@ -25,7 +25,7 @@ A chrome extension for transforming selected text
    `chrome://extensions`.
 1. Enable **Developer mode** via the switch at upper-right.
 1. Click on **Load unpacked**.
-1. Select the local folder containing anole and click **OK**.
+1. Select the local folder containing Anole and click **OK**.
 1. In Chrome select some text on a web page, right click and you should see the
    Anole context menu that offers the sub-menu actions as picture above.
 
