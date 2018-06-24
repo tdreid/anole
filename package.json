@@ -1,7 +1,7 @@
 {
   "name": "anole",
   "version": "0.1.0",
-  "description": "",
+  "description": "A chrome extension that transforms selected text",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify src/anole.js -t [ babelify --presets=env ] | uglifyjs -cm > ext/anole.min.js",
