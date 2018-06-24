@@ -1,5 +1,8 @@
 # Anole
 A chrome extension for transforming selected text
+
+---
+
 ![](doc/img/anole-in-action.png)
 
 ## Supported transformations...
