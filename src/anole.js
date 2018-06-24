@@ -3,7 +3,12 @@
 const kebabCase = require('lodash/kebabCase');
 
 function copyToKebabCase(info, tab) {
-  console.log(kebabCase(info.selectionText));
+  const clip = document.getElementById('ta');
+  clip.value = kebabCase(info.selectionText);
+  clip.select();
+  if (!document.execCommand('copy')) {
+    console.log('Anole: copying error.');
+  }
 }
 
 chrome.contextMenus.create({
