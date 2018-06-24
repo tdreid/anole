@@ -6,9 +6,6 @@
         "contextMenus",
         "clipboardWrite"        
      ],
-    "icons": {
-              "16": "anole-icon-bitty.png"
-            }, 
     "background": {
      "page": "background.html"
     }           
