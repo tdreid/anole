@@ -23,5 +23,28 @@
     "browserify": "^16.2.2",
     "lodash": "^4.17.10",
     "uglify-js": "^3.4.1"
-  }
+  },
+  "homepage": "https://github.com/tdreid/anole#readme",
+  "main": "anole.js",
+  "dependencies": {},
+  "keywords": [
+    "text",
+    "convert",
+    "productivity",
+    "selection",
+    "chrome",
+    "extension",
+    "kamel",
+    "kamelcase",
+    "kebab",
+    "kebabcase",
+    "lower",
+    "lowercase",
+    "snake",
+    "snakecase",
+    "start",
+    "startcase",
+    "upper",
+    "uppercase"
+  ]
 }
