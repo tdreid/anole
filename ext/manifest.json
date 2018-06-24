@@ -10,6 +10,6 @@
               "16": "anole-icon-bitty.png"
             }, 
     "background": {
-     "scripts": ["anole.min.js"]
+     "page": "background.html"
     }           
 }
