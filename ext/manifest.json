@@ -3,7 +3,8 @@
     "version": "0.1.0",
     "name": "Anole",
     "permissions": [
-        "contextMenus"
+        "contextMenus",
+        "clipboardWrite"        
      ],
     "icons": {
               "16": "anole-icon-bitty.png"
