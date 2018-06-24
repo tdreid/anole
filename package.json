@@ -12,7 +12,7 @@
     "url": "git+https://github.com/tdreid/anole.git"
   },
   "author": "Trevor Reid <trevor.d.reid@gmail.com> (http://tdreid.github.io)",
-  "license": "UNLICENSED",
+  "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/tdreid/anole/issues"
   },
