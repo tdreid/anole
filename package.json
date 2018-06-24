@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/anole.js -t [ babelify --presets=env ] | uglifyjs -cm > ext/anole.min.js"
+    "build": "browserify src/anole.js -t [ babelify --presets=env ] | uglifyjs -cm > ext/anole.min.js",
+    "build-debug": "browserify src/anole.js -t [ babelify --presets=env ] > ext/anole.min.js"
   },
   "repository": {
     "type": "git",
