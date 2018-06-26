@@ -46,9 +46,9 @@ the terms of the GNU General Public License as published by the Free Software
 Foundation, version 3 only.
 
 This program is distributed in the hope that it will be useful, but without any 
-warranty — without even the implied warranties of merchantability or fitness for  
-a particular purpose. See [the GNU General Public License](LICENSE) for more 
-details.
+warranty — without even the implied warranties of merchantability or fitness 
+for  a particular purpose. See [the GNU General Public License](LICENSE) for 
+more details.
 
 You should have received [a copy of the GNU General Public License](LICENSE) 
 along with this program. If not, see <https://www.gnu.org/licenses/>.
