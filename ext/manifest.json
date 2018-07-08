@@ -8,5 +8,8 @@
      ],
     "background": {
      "page": "background.html"
-    }           
+    },
+    "icons": {
+      "16": "anole-icon-16.png"
+    }  
 }
