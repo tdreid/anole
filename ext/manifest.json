@@ -10,6 +10,8 @@
      "page": "background.html"
     },
     "icons": {
-      "16": "anole-icon-16.png"
+      "16": "anole-icon-16.png",
+      "48": "anole-icon-48.png",
+      "128": "anole-icon-128.png"
     }  
 }
