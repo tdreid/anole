@@ -1,9 +1,7 @@
 # Anole
 A chrome extension for transforming selected text
-![](doc/img/logotype.svg)
----
 
-![](doc/img/anole-in-action.png)
+![](doc/img/anole-tile-440x280.png)
 
 ## Supported transformations...
 - copyToCamelCase
@@ -12,6 +10,8 @@ A chrome extension for transforming selected text
 - copy_to_snake_case
 - Copy To Start Case
 - COPY TO UPPER CASE
+
+![](doc/img/anole-in-action.png)
  
 ## Build
 1. This repo includes the unpacked extension.  You should not need to build 
