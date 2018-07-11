@@ -1,6 +1,6 @@
 # Anole
 A chrome extension for transforming selected text
-
+![](doc/img/logotype.svg)
 ---
 
 ![](doc/img/anole-in-action.png)
