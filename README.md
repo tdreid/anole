@@ -32,7 +32,13 @@ A chrome extension for transforming selected text
 1. In Chrome select some text on a web page, right click and you should see the
    Anole context menu that offers the sub-menu actions as picture above.
 
-## Installation — Chrome Web Store [**COMING SOON**]
+## Installation — Chrome Web Store
+If you only want to use the tool without hacking at it you can install directly 
+from the Chrome Web Store:
+
+https://tinyurl.com/anole-chrome-ws
+
+This way you will also get automatic updates.
 
 ## License
 **GNU General Public License 3.0 Only** 
