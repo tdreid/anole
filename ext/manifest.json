@@ -5,7 +5,8 @@
     "description": "Transform the selected text.",
     "permissions": [
         "contextMenus",
-        "clipboardWrite"        
+        "clipboardWrite",
+        "storage"
      ],
     "background": {
      "page": "background.html"
