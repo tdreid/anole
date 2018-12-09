@@ -60,10 +60,14 @@ function copyTransformation(info, tab) {
 }
 
 cases.forEach(c => {
-  chrome.contextMenus.create({
-    title: c,
-    id: c,
-    contexts: ['selection'],
-    onclick: copyTransformation
+  chrome.storage.sync.get(null, storedSettings => {
+    if (storedSettings[c] || storedSettings[c] === undefined) {
+      chrome.contextMenus.create({
+        title: c,
+        id: c,
+        contexts: ['selection'],
+        onclick: copyTransformation
+      });
+    }
   });
 });
