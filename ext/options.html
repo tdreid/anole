@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anole Chrome Extension Options</title>
+    <style>
+        @import url('./css/normalize.css');
+        @import url('./css/skeleton.css');
+    </style>
+</head>
+<body>
+    <main class="container">
+        <p>Include these transformations in context menu:</p>
+        <label>
+            <input type="checkbox" id="copyToCamelCase" value="copyToCamelCase">
+            copyToCamelCase
+        </label>
+        <label>
+            <input type="checkbox" id="copy-to-kebab-case" value="copy-to-kebab-case">
+            copy-to-kebab-case
+        </label>
+        <label>
+            <input type="checkbox" id="copy to lower case" value="copy to lower case">
+            copy to lower case
+        </label>
+        <label>
+            <input type="checkbox" id="copy_to_snake_case" value="copy_to_snake_case">
+            copy_to_snake_case
+        </label>
+        <label>
+            <input type="checkbox" id="Copy To Start Case" value="Copy To Start Case">
+            Copy To Start Case
+        </label>
+        <label>
+            <input type="checkbox" id="COPY TO UPPER CASE" value="COPY TO UPPER CASE">
+            COPY TO UPPER CASE
+            </label>
+        <div id="status"></div>
+        <button id="save">Save</button>        
+    </main>
+<script src="options.min.js"></script>
+</body>
+</html>
