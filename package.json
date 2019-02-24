@@ -24,6 +24,7 @@
     "babelify": "^8.0.0",
     "browserify": "^16.2.2",
     "cached-path-relative": ">=1.0.2",
+    "fast-lorem-ipsum": "^1.2.0",
     "lodash": "^4.17.11",
     "uglify-js": "^3.4.1"
   },
