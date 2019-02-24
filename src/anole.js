@@ -21,6 +21,7 @@ const lowerCase = require('lodash/lowerCase');
 const snakeCase = require('lodash/snakeCase');
 const startCase = require('lodash/startCase');
 const upperCase = require('lodash/upperCase');
+const loremText = require('fast-lorem-ipsum');
 
 const capitalize = require('lodash/capitalize');
 const random = require('lodash/random');
