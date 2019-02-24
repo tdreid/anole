@@ -22,6 +22,9 @@ const snakeCase = require('lodash/snakeCase');
 const startCase = require('lodash/startCase');
 const upperCase = require('lodash/upperCase');
 
+const capitalize = require('lodash/capitalize');
+const random = require('lodash/random');
+
 const cases = [
   'copyToCamelCase',
   'copy-to-kebab-case',
