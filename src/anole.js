@@ -21,6 +21,10 @@ const lowerCase = require('lodash/lowerCase');
 const snakeCase = require('lodash/snakeCase');
 const startCase = require('lodash/startCase');
 const upperCase = require('lodash/upperCase');
+const loremText = require('fast-lorem-ipsum');
+
+const capitalize = require('lodash/capitalize');
+const random = require('lodash/random');
 
 const cases = [
   'copyToCamelCase',
@@ -28,8 +32,11 @@ const cases = [
   'copy to lower case',
   'copy_to_snake_case',
   'Copy To Start Case',
-  'COPY TO UPPER CASE'
+  'COPY TO UPPER CASE',
+  'Generate Lorem ipsum'
 ];
+
+let dt = {};
 
 function copyTransformation(info, tab) {
   const clip = document.getElementById('ta');
@@ -52,6 +59,13 @@ function copyTransformation(info, tab) {
     case 'COPY TO UPPER CASE':
       clip.value = upperCase(info.selectionText);
       break;
+    case 'Generate Lorem ipsum':
+      clip.value = loremText(dt.size, dt.unit)
+        .replace(/,\s/gm, c => (random() === 0 ? ', ' : '. '))
+        .split('. ')
+        .map(s => capitalize(s.trim()))
+        .join('. ');
+      break;
   }
   clip.select();
   if (!document.execCommand('copy')) {
@@ -65,9 +79,12 @@ cases.forEach(c => {
       chrome.contextMenus.create({
         title: c,
         id: c,
-        contexts: ['selection'],
+        contexts: c === 'Generate Lorem ipsum' ? ['all'] : ['selection'],
         onclick: copyTransformation
       });
+    }
+    if (c === 'Generate Lorem ipsum') {
+      dt = storedSettings['dummy-text'] || { size: 445, unit: 'w' };
     }
   });
 });

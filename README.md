@@ -10,6 +10,7 @@ A chrome extension for transforming selected text
 - copy_to_snake_case
 - Copy To Start Case
 - COPY TO UPPER CASE
+- Generate Lorem ipsum
 
 ![](doc/img/anole-in-action.png)
  
@@ -45,7 +46,7 @@ This way you will also get automatic updates.
 
 **GPL-3.0-only**
 
-Copyright (C) 2018 [Trevor D. Reid](https://tdreid.github.io/)
+Copyright (C) 2019 [Trevor D. Reid](https://tdreid.github.io/)
 
 This program is free software: you can redistribute it and/or modify it under 
 the terms of the GNU General Public License as published by the Free Software 
