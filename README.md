@@ -10,6 +10,7 @@ A chrome extension for transforming selected text
 - copy_to_snake_case
 - Copy To Start Case
 - COPY TO UPPER CASE
+- Generate Lorem ipsum
 
 ![](doc/img/anole-in-action.png)
  
