@@ -1,2 +1,5 @@
 ext/anole.min.js
 ext/options.min.js
+
+.vscode
+node_modules

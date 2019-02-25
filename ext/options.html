@@ -73,9 +73,30 @@
             <label>
                 <input type="checkbox" id="COPY TO UPPER CASE" value="COPY TO UPPER CASE">
                 COPY TO UPPER CASE
+            </label>
+            <fieldset>
+                <legend>Dummy  Text</legend>
+                <label>
+                    <input type="checkbox" id="Generate Lorem ipsum" value="Generate Lorem ipsum">
+                    Generate Lorem ipsum
                 </label>
+                <label>
+                    <input type="number" id="dummy-text-size" value="445" min="1" max="5000">
+                    Size
+                </label>
+                <label>
+                    <select id="dummy-text-unit">
+                        <option value="w">Words</option>
+                        <option value="c">Characters</option>
+                    </select>
+                    Unit
+                </label>
+            </fieldset>
             <div id="status"></div>
-            <button id="save">Save</button>              
+            <button id="save">Save</button>
+            <div>
+                <sub>Clicking Save will close this page and reload Anole.</sub>
+            </div>          
         </section>
     </main>
 <script src="options.min.js"></script>

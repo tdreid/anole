@@ -23,9 +23,10 @@
     "babel-preset-env": "^1.7.0",
     "babelify": "^8.0.0",
     "browserify": "^16.2.2",
-    "lodash": "^4.17.10",
-    "uglify-js": "^3.4.1",
-    "cached-path-relative": ">=1.0.2"
+    "cached-path-relative": ">=1.0.2",
+    "fast-lorem-ipsum": "^1.2.0",
+    "lodash": "^4.17.11",
+    "uglify-js": "^3.4.1"
   },
   "homepage": "https://github.com/tdreid/anole#readme",
   "main": "anole.js",

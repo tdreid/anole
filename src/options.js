@@ -28,7 +28,13 @@ function saveOptions() {
       'Copy To Start Case': document.getElementById('Copy To Start Case')
         .checked,
       'COPY TO UPPER CASE': document.getElementById('COPY TO UPPER CASE')
-        .checked
+        .checked,
+      'Generate Lorem ipsum': document.getElementById('Generate Lorem ipsum')
+        .checked,
+      'dummy-text': {
+        size: document.getElementById('dummy-text-size').value,
+        unit: document.getElementById('dummy-text-unit').value
+      }
     },
     function() {
       // Update status to let user know options were saved.
@@ -53,7 +59,12 @@ function loadOptions() {
       'copy to lower case': true,
       copy_to_snake_case: true,
       'Copy To Start Case': true,
-      'COPY TO UPPER CASE': true
+      'COPY TO UPPER CASE': true,
+      'Generate Lorem ipsum': true,
+      'dummy-text': {
+        size: 445,
+        unit: 'w'
+      }
     },
     function(items) {
       document.getElementById('copyToCamelCase').checked =
@@ -68,6 +79,12 @@ function loadOptions() {
         items['Copy To Start Case'];
       document.getElementById('COPY TO UPPER CASE').checked =
         items['COPY TO UPPER CASE'];
+      document.getElementById('Generate Lorem ipsum').checked =
+        items['Generate Lorem ipsum'];
+      document.getElementById('dummy-text-size').value =
+        items['dummy-text'].size;
+      document.getElementById('dummy-text-unit').value =
+        items['dummy-text'].unit;
     }
   );
 }
