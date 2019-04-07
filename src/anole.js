@@ -64,7 +64,11 @@ function copyTransformation(info, tab) {
         .replace(/,\s/gm, c => (random() === 0 ? ', ' : '. '))
         .split('. ')
         .map(s => capitalize(s.trim()))
-        .join('. ');
+        .join('. ')
+        .trim()
+        .concat('.')
+        .replace('..', '.')
+        .replace(',.', '.');
       break;
   }
   clip.select();
