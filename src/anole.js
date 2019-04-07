@@ -33,7 +33,7 @@ const cases = [
   'copy_to_snake_case',
   'Copy To Start Case',
   'COPY TO UPPER CASE',
-  'Generate Lorem ipsum'
+  'Lorem ipsum'
 ];
 
 let dt = {};
@@ -59,7 +59,7 @@ function copyTransformation(info, tab) {
     case 'COPY TO UPPER CASE':
       clip.value = upperCase(info.selectionText);
       break;
-    case 'Generate Lorem ipsum':
+    case 'Lorem ipsum':
       clip.value = loremText(dt.size, dt.unit)
         .replace(/,\s/gm, c => (random() === 0 ? ', ' : '. '))
         .split('. ')
@@ -79,11 +79,11 @@ cases.forEach(c => {
       chrome.contextMenus.create({
         title: c,
         id: c,
-        contexts: c === 'Generate Lorem ipsum' ? ['all'] : ['selection'],
+        contexts: c === 'Lorem ipsum' ? ['all'] : ['selection'],
         onclick: copyTransformation
       });
     }
-    if (c === 'Generate Lorem ipsum') {
+    if (c === 'Lorem ipsum') {
       dt = storedSettings['dummy-text'] || { size: 445, unit: 'w' };
     }
   });

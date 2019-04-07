@@ -29,7 +29,7 @@ function saveOptions() {
         .checked,
       'COPY TO UPPER CASE': document.getElementById('COPY TO UPPER CASE')
         .checked,
-      'Generate Lorem ipsum': document.getElementById('Generate Lorem ipsum')
+      'Lorem ipsum': document.getElementById('Lorem ipsum')
         .checked,
       'dummy-text': {
         size: document.getElementById('dummy-text-size').value,
@@ -60,7 +60,7 @@ function loadOptions() {
       copy_to_snake_case: true,
       'Copy To Start Case': true,
       'COPY TO UPPER CASE': true,
-      'Generate Lorem ipsum': true,
+      'Lorem ipsum': true,
       'dummy-text': {
         size: 445,
         unit: 'w'
@@ -79,8 +79,8 @@ function loadOptions() {
         items['Copy To Start Case'];
       document.getElementById('COPY TO UPPER CASE').checked =
         items['COPY TO UPPER CASE'];
-      document.getElementById('Generate Lorem ipsum').checked =
-        items['Generate Lorem ipsum'];
+      document.getElementById('Lorem ipsum').checked =
+        items['Lorem ipsum'];
       document.getElementById('dummy-text-size').value =
         items['dummy-text'].size;
       document.getElementById('dummy-text-unit').value =
