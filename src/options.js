@@ -34,7 +34,8 @@ function saveOptions() {
       'dummy-text': {
         size: document.getElementById('dummy-text-size').value,
         unit: document.getElementById('dummy-text-unit').value
-      }
+      },
+      translit: document.getElementById('translit').checked
     },
     function() {
       // Update status to let user know options were saved.
@@ -64,7 +65,8 @@ function loadOptions() {
       'dummy-text': {
         size: 445,
         unit: 'w'
-      }
+      },
+      translit: false
     },
     function(items) {
       document.getElementById('copyToCamelCase').checked =
@@ -85,6 +87,7 @@ function loadOptions() {
         items['dummy-text'].size;
       document.getElementById('dummy-text-unit').value =
         items['dummy-text'].unit;
+      document.getElementById('translit').checked = items['translit'];
     }
   );
 }

@@ -25,6 +25,7 @@ const loremText = require('fast-lorem-ipsum');
 
 const capitalize = require('lodash/capitalize');
 const random = require('lodash/random');
+const translit = require('cyrillic-to-translit-js');
 
 const cases = [
   'copyToCamelCase',
@@ -37,27 +38,31 @@ const cases = [
 ];
 
 let dt = {};
+let translitActive = false;
 
 function copyTransformation(info, tab) {
   const clip = document.getElementById('ta');
+  let selectionText = translitActive
+    ? translit().transform(info.selectionText)
+    : info.selectionText;
   switch (info.menuItemId) {
     case 'copyToCamelCase':
-      clip.value = camelCase(info.selectionText);
+      clip.value = camelCase(selectionText);
       break;
     case 'copy-to-kebab-case':
-      clip.value = kebabCase(info.selectionText);
+      clip.value = kebabCase(selectionText);
       break;
     case 'copy to lower case':
-      clip.value = lowerCase(info.selectionText);
+      clip.value = lowerCase(selectionText);
       break;
     case 'copy_to_snake_case':
-      clip.value = snakeCase(info.selectionText);
+      clip.value = snakeCase(selectionText);
       break;
     case 'Copy To Start Case':
-      clip.value = startCase(info.selectionText);
+      clip.value = startCase(selectionText);
       break;
     case 'COPY TO UPPER CASE':
-      clip.value = upperCase(info.selectionText);
+      clip.value = upperCase(selectionText);
       break;
     case 'Lorem ipsum':
       clip.value = loremText(dt.size, dt.unit)
@@ -92,3 +97,7 @@ cases.forEach(c => {
     }
   });
 });
+chrome.storage.sync.get(
+  null,
+  storedSettings => (translitActive = storedSettings['translit'] || false)
+);
