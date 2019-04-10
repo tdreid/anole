@@ -17,20 +17,20 @@ A chrome extension for transforming selected text
 ## Build
 1. This repo includes the unpacked extension.  You should not need to build 
    unless you want to debug or change something.  If that's the case...
-1. You'll need the dev dependencies so run `npm install`.
-1. Use `npm run build` to transpile and minify changes in [src/anole.js](src/anole.js)
+2. You'll need the dev dependencies so run `npm install`.
+3. Use `npm run build` to transpile and minify changes in [src/anole.js](src/anole.js)
    to [ext/anole.min.js](ext/anole.min.js).  To transpile a more human readable 
    script for debugging you can use `npm run build-debug` instead.
 
 ## Installation — unpacked in developer mode
 1. The the [/ext](ext/) folder contains the unpacked extension. Save the 
    contents of this folder locally to a place they will remain while in use.
-1. From Chrome's menu select **More tools** > **Extensions** or browse to:
+2. From Chrome's menu select **More tools** > **Extensions** or browse to:
    `chrome://extensions`.
-1. Enable **Developer mode** via the switch at upper-right.
-1. Click on **Load unpacked**.
-1. Select the local folder containing Anole and click **OK**.
-1. In Chrome select some text on a web page, right click and you should see the
+3. Enable **Developer mode** via the switch at upper-right.
+4. Click on **Load unpacked**.
+5. Select the local folder containing Anole and click **OK**.
+6. In Chrome select some text on a web page, right click and you should see the
    Anole context menu that offers the sub-menu actions as picture above.
 
 ## Installation — Chrome Web Store
