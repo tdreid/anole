@@ -25,7 +25,7 @@
     "cached-path-relative": ">=1.0.2",
     "cyrillic-to-translit-js": "^2.2.0",
     "fast-lorem-ipsum": "^1.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "uglify-js": "^3.4.1"
   },
   "homepage": "https://github.com/tdreid/anole#readme",
